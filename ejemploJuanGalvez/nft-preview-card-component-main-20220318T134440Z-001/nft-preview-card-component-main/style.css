@@ -1,0 +1,138 @@
+:root{
+--soft-blue:hsl(215, 51%, 70%);
+--cyan: hsl(178, 100%, 50%); 
+--very-dark-blue-main: hsl(217, 54%, 11%);
+--very-dark-blue-card: hsl(216, 50%, 16%);
+--white: hsl(0, 0%, 100%);
+}
+
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container{
+    display: flex;
+    
+    background-color: hsl(216, 50%, 16%);
+    height: 600px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.subcontainer{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    
+}
+
+.icon{
+    height: 20px;
+    width: 20px;
+}
+
+.avatar{
+    height: 30px;
+    width: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.nft{
+    
+    align-items: center;
+    
+    height: 310px;
+    width: 310px;
+    border-radius: 10px;
+}
+.text{
+    
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+} 
+
+.text-first{
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+
+}
+
+.text-second{
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 18%, 40%);
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+.text-thirth{
+    font-weight: bold;
+    color: hsl(178, 100%, 50%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.text-thirthtwo{
+    color: hsl(215, 18%, 40%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+hr{
+    border-color: hsl(215, 32%, 27%);
+    background-color: hsl(215, 32%, 27%);
+    width: 100%;
+
+}
+.attribution { 
+    color:hsl(215, 18%, 40%);
+    font-size: 11px; 
+    text-align: center; }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.subtext{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+}
+
+.subtext p{
+    padding-left: 20px;
+    color: var(--soft-blue);
+}
+
+.subtext span{
+    color: var(--white);
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    text-align: center; 
+}
+
+.ETH{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
