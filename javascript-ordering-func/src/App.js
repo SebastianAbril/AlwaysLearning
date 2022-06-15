@@ -6,7 +6,12 @@ function App() {
   return (
     <div className="App">
         <h1 className="title"> Ordering List</h1>
-        <Button text="Ascending"className="Ascending" />
+        <div className="ButtonsContainer">
+          <Button text="Ascending"className="Ascending" />
+          <Button text="Descending"className="Descending" />
+        </div>
+       
+
         
     </div>
   );

@@ -6,3 +6,9 @@
   width: 100vw;
   height: 100vh;
 }
+.ButtonsContainer{
+  display: flex;
+  flex-direction: row;
+  width: 210px;
+  justify-content: space-between;
+}
