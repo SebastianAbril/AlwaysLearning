@@ -3,39 +3,39 @@ const data = [ "992 bytes", "2 KB", "5 MB", "13 KB", "922 bytes", "3 GB", "108 K
 
 
 const List = () => {
-    const [order, setOrder] = useState('ASC');
-    const newData = data.map(label => {
-        return {
-            label, 
-            value: toBytes(label)  
-        }
-    }).sort((a, b) => {
+  const newData = data.map((label) =>{
+    return(
+       {
+      label,
+      value: toBytes(label),
+      })})
+  return newData
+}
 
-        if(order === 'ASC') {
-            return a.value - b.value;
-        }
+const toBytes = (label) =>{
+const info = label.split(' ');
+const value = info[0];
+const unit = info[1];
 
-        return  b.value - a.value;
+switch(unit){
+  case 'GB':
+        return value*Math.pow(10,9);
        
-    })
-
-    return (
-        <div className="List"></div>
-    )
+    case 'MB':
+        return value*Math.pow(10,6);
+     
+    case 'KB':
+      return value*Math.pow(10,3);
+      
+    case 'bytes':
+      return value;
+      
+    default:
+      return 0;
+      
+}
 }
 
-const toBytes = (label) => {
-    const data = label.split(' ');
-    const value = data[0];
-    const unit = data[1];
-    switch(unit) {
-        case 'KB':
-            return value * 1000;
-    }
-
-    return 0;
-}
-
-export {List};
+List(data);
 
 
